@@ -1,0 +1,51 @@
+.boxPai{
+
+    text-align: center;
+    color: white;
+    width: 100%;
+    
+  
+}
+    
+    
+
+.boxPai span{
+
+ display: block;
+ padding: 20px 10px;
+    
+}
+
+.boxPai span strong{
+
+    font-weight: bold;
+    color: var(--verde);
+    font-size: 1.1rem;
+    
+}
+
+.boxPai .boxImg{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+}
+
+.boxImg .icon{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--verde);
+    border: 2px solid white;
+}
+
+
+
+
+    
+    
+    

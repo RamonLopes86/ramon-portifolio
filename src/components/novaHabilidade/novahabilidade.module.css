@@ -1,0 +1,183 @@
+.boxPai{
+
+    background-color: var(--padrao);
+    width: 100%;
+    display: none;
+}
+   
+  
+
+.boxPai .boxFilho{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* max-width: 1500px;
+    margin: 0px auto; */
+    padding: 20px 100px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    
+    
+}
+    
+   
+
+.boxPai .boxFilho .Moldura{
+
+    width: 250px;
+    min-height: 350px;
+    border: 2px solid white;
+    text-align: center;
+    background-color: #494949;
+    padding: 10px 0px;
+    
+    cursor: pointer;
+   
+   
+}
+    
+
+
+
+.boxPai .Moldura .icon{
+
+    width: 60%;
+    height: fit-content;
+    
+}
+
+
+/* .apareceu{
+
+    transform:  translateX(0);
+    transition: transform 3s;
+
+}
+
+.escondeu{
+
+    transform:  translateX(-150px);
+    transition: all 500ms;
+
+} */
+
+.cardApareceu{
+
+  transform: translateX(0);
+    opacity: 1;
+   transition: all 2s;
+   transition-delay: 150ms;
+    
+}
+    
+
+    
+
+
+.cardEscondeu{
+
+  transform: translateX(-100%);
+    opacity: 0;
+    transition: none;
+   
+}
+    
+
+
+
+
+
+
+@media screen and (max-width: 422px) {
+
+        .boxPai .boxFilho .Moldura{
+
+         
+         flex-basis: 180px;
+        }
+
+}
+
+
+/* @media screen and (max-width:1334px) {
+
+   .boxPai .boxFilho{
+
+        
+        display: wrap;
+    }
+
+   .boxPai .boxFilho{
+
+        gap: 100px;
+   }
+
+   .boxPai .boxFilho .Moldura{
+    
+    flex-basis: 180px;
+   }
+    
+}
+
+
+@media screen and (width >=1334px){
+    
+    .boxPai .boxFilho .Moldura:nth-child(8){
+
+        transition-delay: 100ms ;
+       
+    }
+    
+    .boxPai .boxFilho .Moldura:nth-child(7){
+    
+        transition-delay: 500ms ;
+       
+    }
+    
+    .boxPai .boxFilho .Moldura:nth-child(6){
+    
+        transition-delay: 700ms ;
+       
+    }
+    
+    .boxPai .boxFilho .Moldura:nth-child(5){
+    
+        transition-delay: 900ms ;
+       
+
+    }
+    .boxPai .boxFilho .Moldura:nth-child(5){
+    
+        transition-delay: 1s ;
+       
+
+    }
+    
+    .boxPai .boxFilho .Moldura:nth-child(4){
+    
+        transition-delay: 1.2s ;
+       
+
+    }
+    
+    .boxPai .boxFilho .Moldura:nth-child(3){
+    
+        transition-delay: 1.4s ;
+       
+
+    }
+    
+    .boxPai .boxFilho .Moldura:nth-child(2){
+    
+        transition-delay: 1.6s ;
+    }
+    
+    .boxPai .boxFilho .Moldura:nth-child(1){
+    
+        transition-delay: 1.8s ;
+    }
+} */

@@ -1,0 +1,193 @@
+
+.boxPai{
+
+
+    /* background-color: var(--padrao); */
+    padding: 100px 60px;
+    color: white;
+
+ 
+
+}
+    
+
+
+.boxPai .titulo{
+
+    text-align: center;
+    padding-bottom: 80px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    position: relative;
+   text-decoration: underline var(--verde); 
+   text-underline-offset: 10px;
+   
+    
+}
+
+
+ 
+   
+
+.boxPai .boxBorda{
+
+    border-left: 4px solid var(--verde);
+    max-width: 1300px;
+    margin: 0px auto;
+    position: relative;
+    padding-left:50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+   
+    
+}
+    
+    
+
+    
+
+.boxPai .boxBorda .moldura{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        
+        
+}
+
+ .moldura .boxImg{
+
+    width: 80px;
+    height: 80px;
+    background-color: var(--verde);
+    border-radius: 100%;
+    position: absolute;
+    left: -90px;
+    transition: all 500ms;
+    z-index: 1;
+    
+
+}
+
+.imgPc{
+
+    width: 50px;
+    height: 50px;
+    background-color: var(--verde);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.moldura span{
+
+    padding:3px 15px;
+    background-color: #212121;
+    width: fit-content;
+    text-align: center;
+    border-radius: 5px;
+    outline:2px solid #212121;
+    transition: all 500ms;
+    position: relative;
+    top: 20px;
+}
+
+
+.moldura h1{
+
+    font-size: 2.3rem;
+    width: 100%;
+    overflow-wrap: break-word;
+    
+}
+
+
+.moldura p{
+
+    /* font-weight: 200; */
+
+}
+
+.moldura span:hover{
+
+    color: var(--verde);
+    transition: all 500ms;
+    outline: 2px solid var(--verde);
+
+
+}
+
+.moldura .boxImg:hover{
+
+    box-shadow: 0px 0px 15px var(--verde);
+    transition: all 500ms;
+
+}
+
+
+
+
+.visible{
+
+    transform: scale(1) translateX(0);
+    
+    opacity: 1;
+    transition: all 1s;
+
+}
+
+.invisible{
+
+    transform: scale(0)   translateX(40vw);
+    
+    opacity: 0;
+
+}
+
+
+.moldura:nth-child(1){
+
+    transition-delay:0ms ;
+
+}
+
+.moldura:nth-child(2){
+
+    transition-delay:200ms ;
+    
+}
+
+
+.moldura:nth-child(3){
+
+    transition-delay:300ms ;
+    
+}
+
+
+
+
+@media screen and (max-width:420px) {
+
+    .moldura h1{
+
+        font-size: 1.5rem;
+        padding-top: 20px;
+       
+        
+    }
+    
+}
+
+
+
+
+
+
+
+   
+   

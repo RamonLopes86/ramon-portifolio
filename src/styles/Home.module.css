@@ -1,229 +1,650 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+/* animacao de intersection */
+
+/* apresentacao */
+
+.visible{
+
+    transform: translateX(0)  scale(1) ;
+    opacity: 1;
+    filter: blur(0px);
+
+    transition-property: transform , scale , filter;
+    transition-duration:  1.2s , 1s , 1.2s;
+    transition-delay: 200ms;
+    
+
+    
+
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+
+.invisible{
+
+    transform: translateY(-100vh)  scale(0);
+    opacity: 0;
+    filter: blur(10px);
+    transition-property: transform , scale , filter;
+    transition-duration:  1.7s , 2s , 1s;
+    
+
+}
+  
+
+
+/* quem sou */
+
+.quemVisible{
+
+    transform: translateX(0);
+    transition: transform 1s , filter 1.8s;
+    filter: blur(0);
+    transition-delay: 100ms;
+    
 }
 
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+.quemInvisible{
+
+    transform: translateX(-200vw);
+    filter: blur(10px);
+    transition: all 1s;
+
 }
 
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+
+
+/* mostrar menu */
+
+.recolherMenu{
+
+    width: 0%;
+    transition: all 1s;
+
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+.mostrarMenu{
+
+    width: 80%;
+    transition: all 1s;
+
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: var(--max-width);
-  width: 100%;
+
+.opacidadeZero{
+
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 1s;
+    transform: translatey(-200px);
+}
+    
+
+.opacidadeUm{
+
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transition-delay: 300ms;
+    transform: translatey(0);
 }
 
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+
+
+
+
+/* animacao btn fechar */
+
+.animaBotao{
+
+   
+    animation-name: animaFechar;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+    
+    
+    
+
 }
 
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
+.animaBotaoOff{
+
+    animation:none;
+    
 }
 
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
 
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-}
+.imgDiaNoite{
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
-}
-
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-}
-
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-}
-
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
-}
-
-.logo {
-  position: relative;
-}
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
+    width: 35px;
+    height: 35px;
     position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: none;
     border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
+    outline: 2px solid var(--verde);
+    border-radius: 100%;
+    padding: 5px;
+    
+}
+    
+   
 
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
-  }
+
+    
+
+.imgDiaNoite:hover{
+
+    outline: 1px solid var(--verde);
+    filter: drop-shadow(0px 0px  20px var(--verde));
+    transition: all 500ms;
+    
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
+
+
+
+/* topo */
+
+.mdDia{
+
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid black;
+    color: black;
+    transition: all 800ms;
+    
+}
+    
+
+
+.mdDia span{
+
+    color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
+.mdDia li{
 
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
+    color: black;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+
+
+.mdDia h1{
+
+    color: rgb(0, 0, 0);
 }
+
+.mdDia p{
+
+    color: black;
+    font-weight: bold;
+}
+
+
+.mdNoite{
+
+background-color: var(--padrao);
+color: white;
+transition: all 800ms;
+
+        
+    
+
+}
+
+
+/* apresentação */
+
+.mdApresDia{
+
+    background-color: white;
+    color: black;
+    transition: all 800ms;
+    
+}
+
+
+.mdApresDia p {
+
+    color: black;
+    font-weight: bold;
+}
+
+.mdApresDia h1{
+    
+    color: black;
+}
+
+.mdApresNoite{
+
+    background-color: var(--padrao);
+    color: white;
+    transition: all 800ms;
+}
+
+.mdApresNoite button:nth-child(1){
+
+    color: white;
+    background-color: var(--verde);
+    outline: none;
+    border: none;
+}
+
+.mdApresNoite button:nth-child(1):hover{
+
+    color: var(--verde);
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+.mdApresDia button:nth-child(1){
+
+  background-color: var(--verde);
+  border: none;
+  color: white;
+  border: 2px solid transparent;
+    
+}
+
+.mdApresDia  button:nth-child(1):hover{
+
+    border: 2px solid var(--verde);
+    background-color: #dcd9c9;
+    color: black;
+    
+}
+
+
+
+.mdApresNoite button:nth-child(2){
+
+    color: black;
+    background-color: white;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+
+
+.mdApresNoite button:nth-child(2):hover{
+
+    color: var(--verde);
+    background-color:transparent;
+    outline: none;
+  
+    border: 2px solid var(--verde);
+}
+
+
+
+
+.mdApresDia button:nth-child(2){
+
+    color: black;
+    background-color: white;
+    outline: none;
+    border: 2px solid var(--verde);
+}
+
+.mdApresDia button:nth-child(2):hover{
+
+    color: var(--verde);
+    background-color:transparent;
+    outline: none;
+  
+    border: 2px solid var(--verde);
+}
+
+
+.iconWhats{
+
+    width: 70px;
+    height: fit-content;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+
+    animation-name: whatsMove;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* quem */
+
+.mdQuemDia{
+
+    background-color: white;
+    color: black;
+    transition: all 800ms;
+
+}
+
+
+
+.mdQuemDia h1 {
+
+    color: black;
+}
+
+.mdQuemDia p {
+
+    color: black;
+    
+}
+
+.mdQuemNoite{
+
+    background-color: var(--padrao);
+    color: white;
+    transition: all 800ms;
+}
+
+
+/* habilidades */
+
+.mdDiaHab{
+
+background-color: white;
+color: black;
+transition: all 800ms;
+
+}
+
+.mdDiaHab h1 {
+
+    color: black;
+}
+
+.mdNoiteHab{
+
+    background-color:var(--padrao);
+    transition: all 800ms;
+
+}
+
+/* educacao */
+
+.mdDiaEdu{
+
+    background-color: white;
+    color: black;
+    transition: all 800ms;
+}
+
+.mdDiaEdu h1{
+
+    color: black;
+}
+
+.mdDiaEdu p {
+
+    color: rgb(0, 0, 0);
+    font-weight:500;
+}
+
+.mdDiaEdu span {
+
+    color: white;
+}
+
+.mdNoiteEdu{
+
+    background-color: var(--padrao);
+    color: white;
+    transition: all 800ms;
+}
+
+.mdNoiteEdu p {
+
+    font-weight: 400;
+    
+    color: rgb(255, 252, 252);
+}
+
+.mdNoiteEdu span {
+
+    color: white;
+}
+
+.mdNoiteEdu h1 {
+
+    color: white;
+}
+
+
+
+/* projetos */
+
+.mdDiaProj{
+
+    background-color: white;
+    transition: all 800ms;
+}
+
+.mdDiaProj h1 {
+
+    color: black;
+   
+}
+
+.mdDiaProj p {
+
+    color: black;
+}
+
+.mdDiaProj span {
+
+    opacity: 1;
+    font-weight: bold;
+    color: black
+}
+
+.mdNoiteProj{
+    background-color: var(--padrao);
+    transition: all 800ms;
+}
+
+.mdNoiteProj span {
+
+    color: var(--verde);
+}
+
+
+
+/* contatos */
+
+.mdDiaCont{
+
+    background-color: white;
+    transition: all 900ms;
+
+
+    & button{
+
+        
+        background-color: var(--verde);
+        outline: 2px solid transparent;
+        color: white;
+        font-weight: bold;
+         transition: all 500ms;
+    }
+
+
+    & button:hover{
+
+        background-color: #c7c3b9d8;
+        outline: 2px solid var(--verde);
+        transition: all 500ms;
+        color: black;
+        font-weight: bold;
+        transform: translateY(5px);
+    }
+
+    & h1{
+
+        color: black;    
+    }
+
+    & input{
+
+        background-color:#151618e1;
+        transition: all 500ms;
+
+    }
+
+    & textarea{
+
+        background-color: #151618e1;
+        transition: all 500ms;
+    }
+}
+
+
+.mdNoiteCont{
+
+    background-color: var(--padrao);
+    transition: all 900ms;
+
+    & button{
+
+        color: white;
+        font-weight: bold;
+        background-color: var(--verde);
+        outline: 2px solid transparent;
+    }
+
+  
+    
+    & button:hover{
+        
+        outline: 2px solid var(--verde);
+        background-color: transparent;
+        font-weight: bold;
+        transform: translateY(5px);
+    }
+
+    
+    & h1{
+
+        color: white;
+       
+    }
+    
+
+}
+
+
+/* rodape */
+
+
+.mdDiaRodape{
+
+    background-color: white;
+    transition: all 900ms;
+
+
+    & span{
+
+        color: black;
+        font-weight: 500;
+    }
+
+}
+
+.mdNoiteRodape{
+
+background-color: var(--padrao);
+transition: all 900ms;
+
+
+    & span{
+
+        color: white;
+        font-weight: 500;
+        
+    }
+
+
+}
+
+/* Nav Escondida */
+
+.mdDiaEscondida{
+
+    background-color:#b4b2b2;
+
+  
+
+    & li{
+
+        color: black;
+       font-weight: bold;
+       letter-spacing: 2px;
+    }
+
+
+
+
+}
+
+.mdNoiteEscondida{
+
+    background-color:#2D2D2D;;
+
+    & li{
+
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+    }
+
+
+}
+
+
+/* animacao botao fechar */
+
+@keyframes animaFechar {
+
+    from{
+
+        transform: translateX(-320px);
+        opacity: 0;
+    }
+    to{
+
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media (prefers-color-scheme :noite){
+
+
+}
+
+
+@keyframes whatsMove {
+
+    from{
+
+       transform: translateY(-5px); 
+
+    }
+    to{
+        
+        transform: translateY(5px); 
+
+    }
+    
+}
+
+
+
+   

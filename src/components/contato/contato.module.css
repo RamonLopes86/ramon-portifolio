@@ -1,0 +1,169 @@
+.boxPai {
+
+    text-align: center;
+    /* background-color: var(--padrao); */
+    padding: 80px 10px 50px 10px;
+
+}
+
+
+
+.boxPai h1 {
+
+    padding: 80px 10px 80px 10px;
+    font-size: 2.3rem;
+    /* color: white; */
+    text-transform: uppercase;
+    text-decoration: underline 2px var(--verde);
+    text-underline-offset: 6px;
+    text-decoration-thickness: 4px;
+
+}
+
+.boxPai .boxFilho {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 60px 0px;
+    padding-top: 40px;
+}
+
+
+.boxPai .boxFilho .formulario {
+
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+    padding: 0px 10px 10px 10px;
+    
+    
+}
+
+.boxPai .boxFilho .formulario input {
+
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 5px 3px var(--verde);
+    outline: none;
+
+}
+
+
+
+.boxPai .boxFilho .formulario textarea {
+
+    /* padding: 80px 10px; */
+    min-height: 250px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 5px 3px var(--verde);
+    outline: none;
+    text-indent: 10px;
+    padding-top: 15px;
+    
+    
+    
+}
+
+
+.boxPai .boxFilho .formulario textarea::placeholder {
+
+    text-indent: 10px;
+    padding-top: 0px;
+
+
+}
+
+
+.boxPai .boxFilho .formulario button{
+
+    padding: 10px;
+    text-transform: uppercase;
+    /* background-color: var(--verde); */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    /* color: white; */
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+
+/* .boxPai .boxFilho .formulario button:hover{
+
+    background-color: transparent;
+    outline: 1px solid var(--verde);
+    transition: all 500ms;
+    
+} */
+
+
+
+.img {
+
+    width: 450px;
+    height: 100%;
+    border-radius: 100%;
+    background-color: var(--verde);
+    clip-path: inset(0px 0px 52px );
+   
+    
+}
+
+    
+
+
+.on{
+
+ 
+
+   transform:  translateX(0);
+   transition:all 2s;
+   opacity: 1;
+
+    &.img{
+
+        transition-delay: 100ms;
+    }
+
+   &.formulario{
+
+    transition-delay: 400ms;
+   }
+  
+
+}
+
+.off{
+
+    /* transform: translateX(-100vw) rotate(45deg);
+    transition: none;
+    opacity: 0; */
+
+    transform:  translateX(-20vw);
+    transition: none;
+    opacity: 0;
+    
+
+
+}
+
+
+
+
+
+@media screen and (max-width:500px) {
+
+
+    .boxPai .boxFilho .img{
+
+        width: 100%;
+    }
+    
+}

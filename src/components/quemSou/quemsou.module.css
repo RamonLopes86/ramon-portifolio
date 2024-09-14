@@ -1,0 +1,150 @@
+.boxPai{
+
+    /* background-color: var(--padrao); */
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 250px 0px 0px 0px;
+    
+}
+    
+
+
+.boxPai .boxFilho{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 30px);
+    justify-content: space-evenly;
+    gap: 80px;
+    
+    
+    
+}
+
+
+
+.boxPai .boxTx{
+
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boxPai .boxTx span{
+
+    color: var(--verde);
+    font-size: 1.1rem;
+}
+
+.boxPai .boxTx h1{
+
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+.boxPai .boxTx p:first-of-type{
+
+   font-size: 1.8rem;
+}
+
+.boxPai .boxTx p:last-of-type{
+
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.boxPai .boxTx p:last-of-type::first-letter{
+
+    font-size: 3rem;
+    color: var(--verde);
+}
+
+
+
+.boxPai .img{
+
+
+    width: 600px;
+    height: fit-content;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.801));   
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    aspect-ratio: 4/4;
+    object-fit: cover;
+    border-bottom: 10px solid var(--verde);
+    
+    
+}
+
+
+@media screen and (max-width:960px) {
+
+
+        .boxPai{
+
+            padding: 40px 0px;
+
+        }
+
+}
+
+
+
+@media screen and (max-width:1260px) {
+
+    
+
+    .boxPai .boxFilho{
+        
+        padding: 20px 0px;
+        flex-direction: column-reverse;
+      
+    }
+        
+    
+    .boxPai .boxFilho .boxTx{
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .boxPai .boxFilho .boxTx p:last-of-type{
+
+       
+        text-align:justify;
+        width: calc(100% - 40px);
+        margin: 0px 20px;
+    }
+
+
+    .boxPai .img{
+
+        width: 60%;
+        transition: none;
+    }
+}
+   
+
+@media screen and (width < 800px) {
+
+    .boxPai .img{
+
+
+        width: 100%;
+        transition: none;
+        
+        
+    }
+}
+
+
+
+
+
+
+
