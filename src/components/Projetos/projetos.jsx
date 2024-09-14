@@ -3,7 +3,7 @@ import React , {useState , useRef , useEffect} from "react";
 import projetos from "../dados/dadosProjetos";
 import Image from "next/image";
 import Link from "next/link";
-import gitHub from "../../../public/gitHub.png"
+import gitHub from "../../../public/github.png"
 
 
 

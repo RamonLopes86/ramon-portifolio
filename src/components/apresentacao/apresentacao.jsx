@@ -3,7 +3,7 @@ import Image from "next/image";
 import ramon from "../../../public/ramon1.jpg"
 import Link from "next/link";
 import github from "../../../public/placa-do-github.png"
-import lkd from "../../../public/lkdsem.png"
+import lkd from "../../../public/lkdSem.png"
 
 
 

@@ -1,7 +1,7 @@
 import estiloFooter from './footer.module.css';
 import Image from 'next/image';
 import lkd from '../../../public/lkdBlack.png'
-import git from '../../../public/gitHub.png'
+import git from '../../../public/github.png'
 import mail from '../../../public/mail.png'
 import Link from 'next/link';
 

@@ -2,7 +2,7 @@ import Image from "next/image"
 import quimica from "../../../public/quimica.png"
 import restaurante from "../../../public/rest.png"
 import sorv from "../../../public/sorv.png"
-import Link from "next/link"
+
 import js from "../../../public/js.png"
 import html from '../../../public/html.png'
 import css from "../../../public/css.png"
@@ -10,7 +10,7 @@ import iconReact from "../../../public/iconRreact.png"
 import pet from "../../../public/pet.png"
 import clinica from "../../../public/clinica.png"
 import pousada from "../../../public/pousada.png"
-import alfa from '../../../public/alfatec.png'
+import alfa from '../../../public/alfaTec.png'
 import viagem from '../../../public/viagem.png'
 import neymar from '../../../public/neymar.png'
 
