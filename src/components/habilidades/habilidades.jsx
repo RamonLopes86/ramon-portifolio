@@ -7,9 +7,11 @@ import html from "../../../public/html.png"
 import css from "../../../public/css.png"
 import front from '../../../public/front.png'
 import iconReact from "../../../public/iconRreact.png"
+import iconGit from '../../../public/gitIcon.png'
 import iconNode from "../../../public/node.png"
 import React, { useState, useEffect, useRef } from "react";
 import dadosHabilidades from "../dados/dadosHabili";
+
 
 
 
@@ -86,15 +88,44 @@ export default function Habilidade(props) {
 
 
                     <section className={`${estiloHabilidade.boxBlocos} ${props.modoDiaHab}  `} >
-                        <Image className={estiloHabilidade.icon} src={sql} />
-                        <Image className={estiloHabilidade.icon} src={mysql} />
-                        <Image className={estiloHabilidade.icon} src={js} />
-                        <Image className={estiloHabilidade.icon} src={html} />
-                        <Image className={estiloHabilidade.icon} src={css} />
-                        <Image className={estiloHabilidade.icon} src={iconReact} />
-                        <Image className={estiloHabilidade.icon} src={iconNode} />
+
+                        <div className={estiloHabilidade.molduraImg}>
+                            <Image className={estiloHabilidade.icon} src={sql} />
+                        </div>
+
+                        <div className={estiloHabilidade.molduraImg}>
+                            <Image className={estiloHabilidade.icon} src={mysql} />
+                        </div>
+
+                        <div className={estiloHabilidade.molduraImg}>
+                            <Image className={estiloHabilidade.icon} src={js} />
+                        </div>
+
+                        <div className={estiloHabilidade.molduraImg}>
+                            <Image className={estiloHabilidade.icon} src={html} />
+                        </div>
+
+                        <div className={estiloHabilidade.molduraImg}>
+                            <Image className={estiloHabilidade.icon} src={css} />
+                        </div>
+
+                        <div className={estiloHabilidade.molduraImg}>
+                            <Image className={estiloHabilidade.icon} src={iconReact} />
+                        </div>
+
+                        <div className={estiloHabilidade.molduraImg}>
+                            <Image className={estiloHabilidade.icon} src={iconNode} />
+
+                        </div>
+
+                        <div className={estiloHabilidade.molduraImg}>
+                            
+                            <Image className={estiloHabilidade.icon} src={iconGit} />
+
+                        </div>
                     </section>
                 </section>
+
             </section>
 
 
