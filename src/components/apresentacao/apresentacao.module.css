@@ -78,6 +78,7 @@
 
     font-size: 3rem;
     letter-spacing: 1px;
+
 }
 
 .boxPai .boxTexto .tx .txDev{
@@ -190,9 +191,11 @@
     background-color: var(--verde);
     border-radius: 100%;
     border: 1px solid white;
+ 
+}
+       
     
 
-}
 
 .boxPai .icon:hover{
 

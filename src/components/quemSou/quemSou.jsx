@@ -16,7 +16,7 @@ export default function Quem(props) {
 
             <div className={`${estiloQuem.boxFilho} `} ref={props.quemRef}>
 
-                <Image className={`${estiloQuem.img} ${props.quemAnima}`} src={ft} />
+                <Image alt="imagem" className={`${estiloQuem.img} ${props.quemAnima}`} src={ft} />
 
                 <div className={`${estiloQuem.boxTx} ${props.quemAnima}`}>
                     
