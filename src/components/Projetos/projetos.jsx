@@ -71,6 +71,7 @@ export default function Projetos(props){
                                 
 
                                 <div className={estiloProj.boxBtn}>
+                                    
                                     <Link className={estiloProj.link} href={arrayProj.lk} target="_blank"  ><button>Ver Projeto</button></Link>
 
                                    

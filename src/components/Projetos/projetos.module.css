@@ -35,32 +35,53 @@
 
 .boxPai .boxProjetos{
 
+    
+    /* flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     gap: 80px 50px;
     align-items: center;
     justify-content:center;
     text-align: left;
-    padding: 0px 2%;
+    padding: 20px 2%;
+    max-width:1700px;
+    margin: 0px auto; */
+    
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    gap: 20px;
     max-width: 1500px;
-    margin:0px auto ;
-    flex-wrap: wrap;
+    margin: 0px auto;
+    padding: 20px;
+
    
 }
+    
+    
+    
+   
 
 .boxProjetos .moldura{
 
+    
     width: 400px;
-    min-height: 700px;
+    height: 600px;
     border-radius: 8px 8px 0px 0px;
-    overflow: hidden;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-between; */
     border-bottom: 1px solid white;
     border-right: 1px solid white;
-    
+    text-align: left;
+    position: relative;
 }
+
+   
+ 
+
+  
+   
     
 
 /* .boxProjetos .moldura:hover{
@@ -79,13 +100,21 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    
+    position: absolute;
+    top: 70%;
+ 
+
 }
+    
+
+    
+    
 
 .boxProjetos .moldura .boxBtn .linkGit{
 
     position: relative;
     top: 5px;
+    z-index: 1;
    
 }
 
@@ -105,9 +134,18 @@
 
 .boxPai .boxProjetos .moldura .icon{
 
-    width: 100%;
-    height: fit-content;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    
 }
+
+.boxPaiTec{
+
+    position: absolute;
+    bottom: 0
+  }
 
 .boxPai .boxProjetos .moldura .boxTec{
 
@@ -154,13 +192,23 @@
     color: white;
     margin-left: 2px;
     transition: all 500ms;
+
 }
+    
 
 
 .iconTec{
 
     width: 12%;
     height: fit-content;
+    transition: all 200ms;
+   
+}
+
+.iconTec:hover{
+
+    transform: scale(1.1);
+    transition: all 200ms;
 }
 
 
@@ -179,8 +227,12 @@
 
 
 .iconGit:hover{
+
     transform: scale(1.08) translateY(-5px);
     transition: all 500ms;
+    
+    
+    
 }
 
 
@@ -243,24 +295,3 @@
 
 } */
 
-@media screen and (max-width:410px) {
-
-
-    .boxPai .boxProjetos {
-
-
-        flex-direction: row;
-        gap: 80px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 10px;
-
-    }
-
-
-
-        
-    
-
-}
