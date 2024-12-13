@@ -1,9 +1,7 @@
 import estiloFooter from './footer.module.css';
-import Image from 'next/image';
-import lkd from '../../../public/lkdBlack.png'
-import git from '../../../public/github.png'
-import mail from '../../../public/mail.png'
 import Link from 'next/link';
+import { FaLinkedin , FaGithubAlt  } from 'react-icons/fa';
+import { CiMail } from "react-icons/ci";
 
 
 
@@ -21,9 +19,9 @@ export default function Footer(props) {
 
             <div className={estiloFooter.boxImg}>
 
-                <Link href={'https://www.linkedin.com/feed/'} target='_blank' ><Image alt='imagem' src={lkd} className={estiloFooter.icon} /></Link>
-                <Link href={'mailto:ramondasilvalopes@hotmail.com'}><Image alt='imagem' src={mail} className={estiloFooter.icon} /></Link>
-                <Link href={'https://github.com/RamonLopes86'} target='_blank'><Image alt='imagem' src={git} className={estiloFooter.icon} /></Link>
+                <Link href={'https://www.linkedin.com/feed/'} target='_blank' ><FaLinkedin className={estiloFooter.icon}/></Link>
+                <Link href={'mailto:ramondasilvalopes@hotmail.com'}><CiMail className={estiloFooter.icon}/></Link>
+                <Link href={'https://github.com/RamonLopes86'} target='_blank'><FaGithubAlt className={estiloFooter.icon}/></Link>
                 
                
 

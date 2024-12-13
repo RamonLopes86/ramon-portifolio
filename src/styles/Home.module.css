@@ -500,7 +500,7 @@ transition: all 800ms;
 
     & textarea{
 
-        background-color: #151618e1;
+        background-color:rgba(158, 157, 157, 0.616);
         transition: all 500ms;
     }
 }

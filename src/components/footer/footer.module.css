@@ -3,7 +3,8 @@
     text-align: center;
     color: white;
     width: 100%;
-    
+    padding: 15px 10px;
+  
   
 }
     
@@ -38,10 +39,20 @@
 
     width: 30px;
     height: 30px;
-    border-radius: 100%;
-    background-color: var(--verde);
-    border: 2px solid white;
+   color: var(--verde);
+   transition: all 500ms linear;
 }
+
+
+
+.boxImg .icon:hover{
+
+    
+    transform: translateY(-10px);
+    transition: all 500ms linear;
+
+}
+
 
 
 

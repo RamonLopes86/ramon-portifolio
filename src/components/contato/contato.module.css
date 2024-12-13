@@ -44,28 +44,21 @@
     
 }
 
-.boxPai .boxFilho .formulario input {
 
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0px 0px 5px 3px var(--verde);
-    outline: none;
-
-}
 
 
 
 .boxPai .boxFilho .formulario textarea {
 
-    /* padding: 80px 10px; */
-    min-height: 250px;
+  
+    min-height: 350px;
     border-radius: 8px;
     border: none;
     box-shadow: 0px 0px 5px 3px var(--verde);
     outline: none;
     text-indent: 10px;
     padding-top: 15px;
+    
     
     
     
@@ -92,7 +85,22 @@
     /* color: white; */
     cursor: pointer;
     transition: all 500ms;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
+
+.boxPai .boxFilho .formulario button .icon{
+
+    width: 25px;
+    height: 25px;
+
+}
+
+
+
 
 
 /* .boxPai .boxFilho .formulario button:hover{
@@ -109,15 +117,13 @@
 
     width: 450px;
     height: 100%;
-    border-radius: 100%;
-    background-color: var(--verde);
-    clip-path: inset(0px 0px 52px );
-   
+    border-radius: 20px 120px 120px 100px;
+    aspect-ratio: 4/4;
+    object-fit: cover;
     
 }
-
+   
     
-
 
 .on{
 

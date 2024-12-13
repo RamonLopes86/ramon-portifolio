@@ -1,7 +1,10 @@
 import estiloContato from './contato.module.css';
 import Image from 'next/image';
-import avatar from "../../../public/avatarRemovido.png"
+import ramon from '../../../public/ramon2.jpg'
+import { FaWhatsapp } from 'react-icons/fa';
 import React , {useState , useRef , useEffect} from 'react';
+
+
 
 
 
@@ -15,6 +18,8 @@ export default function Contato(props){
 
     const [ useImg , setUseImg] = useState(estiloContato.off)
     const [useForm , setUseForm] = useState(estiloContato.off)
+
+    const [texArea , setTexArea] = useState('')
 
 
     useEffect(()=>{
@@ -67,9 +72,23 @@ export default function Contato(props){
 
     function ButtonDeafult(ev){
 
-         ev.preventDefault()   
+        ev.preventDefault()
+        
+        const condMsg = encodeURIComponent(texArea)
+
+        const number = '71991265530'
+        const url = `https://wa.me/${number}?text=${condMsg}`
+
+        window.open(url)
 
     }
+
+    
+
+        
+
+
+
 
     return(
 
@@ -81,16 +100,20 @@ export default function Contato(props){
 
                         
 
-                        <Image ref={boxImgRef} className={`${estiloContato.img} ${useImg}`} src={avatar}/>
+                        <Image ref={boxImgRef} className={`${estiloContato.img} ${useImg}`} src={ramon}/>
 
 
                         <form ref={boxFormRef}  action="#" className={`${estiloContato.formulario} ${useForm}`}>
 
-                            <input type="text" name="nome" id="idnome" autoComplete='off' placeholder='nome' />
-                            <input type="email" name="mail" id="idmail" autoComplete='off' placeholder='email' />
-                            <textarea placeholder='mensagem' name="msg" id="idmsg"></textarea>
 
-                            <button onClick={ButtonDeafult}>enviar</button>
+                        <textarea  value={texArea} onChange={({target})=> setTexArea(target.value)}  placeholder='digite aqui sua mensagem...' name="msg" id="idmsg">
+
+                        </textarea>
+
+
+
+                         
+                         <button onClick={ButtonDeafult}>Envie sua Mensagem <FaWhatsapp className={estiloContato.icon}/> </button>
 
                             
 
