@@ -42,8 +42,21 @@ export default function Apresentacao(props){
                             <p>Minhas Redes :</p>
                             
 
-                            <Link href={'https://github.com/RamonLopes86'} target="_blank"> < Image  className={`${estiloApresentacao.icon} ${estiloApresentacao.iconGit} `}  src={github}/>  </Link>
-                            <Link href={'https://www.linkedin.com/in/ramon-lopes-455862318/'} target="_blank"> <Image className={`${estiloApresentacao.icon}`} src={lkd}/>  </Link>
+                            <Link href={'https://github.com/RamonLopes86'} target="_blank">
+                            
+                             < Image  className={`${estiloApresentacao.icon} ${estiloApresentacao.iconGit} `}  src={github}/>  
+                            
+                            </Link>
+
+                            <Link href={'https://www.linkedin.com/in/ramon-lopes-455862318/'} target="_blank"> 
+                            
+                            <Image className={`${estiloApresentacao.icon}`} src={lkd}/>
+                            
+                            </Link>
+
+                            <Link href={''}>
+                                    
+                            </Link>
 
                         </div>
 

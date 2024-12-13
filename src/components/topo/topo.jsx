@@ -34,7 +34,7 @@ export default function Topo(props){
                     <Link onClick={()=>ClickMenu('sobre mim')}  className={`${estiloTopo.link} ${vl==='sobre mim'  ? estiloTopo.btnClicado : estiloTopo.btnNull}`} href={'#quemSouEu'}><li>Sobre mim</li></Link>
                     <Link onClick={()=> ClickMenu('habilidades')} className={`${estiloTopo.link} ${vl==='habilidades'? estiloTopo.btnClicado : estiloTopo.btnNull}`} href={'#idskills'}><li>Habilidades</li></Link>
                     <Link onClick={()=>ClickMenu('educacao')} className={`${estiloTopo.link} ${vl === 'educacao'? estiloTopo.btnClicado : estiloTopo.btnNull }`} href={'#educacao'}><li>Educação</li></Link>
-                    <Link onClick={()=> ClickMenu('portifolio')} className={`${estiloTopo.link} ${vl === 'portifolio' ? estiloTopo.btnClicado : estiloTopo.btnNull}`} href={'#idportifolio'}><li>Portifólio</li></Link>
+                    <Link onClick={()=> ClickMenu('portifolio')} className={`${estiloTopo.link} ${vl === 'portifolio' ? estiloTopo.btnClicado : estiloTopo.btnNull}`} href={'#idportifolio'}><li>Projetos</li></Link>
                     <Link onClick={()=> ClickMenu('contatos')} className={`${estiloTopo.link} ${vl === 'contatos'? estiloTopo.btnClicado : estiloTopo.btnNull }`} href={'#idcontatos'}><li>Contatos</li></Link>
 
                 </ul>
@@ -61,7 +61,7 @@ export default function Topo(props){
                     <Link onClick={props.esconderMenu} className={estiloTopo.link} href={'#quemSouEu'}><li>Sobre mim</li></Link>
                     <Link onClick={props.esconderMenu} className={estiloTopo.link} href={'#idskills'}><li>Habilidades</li></Link>
                     <Link onClick={props.esconderMenu} className={estiloTopo.link} href={'#educacao'}><li>Educação</li></Link>
-                    <Link onClick={props.esconderMenu} className={estiloTopo.link} href={'#idportifolio'}><li>Portifólio</li></Link>
+                    <Link onClick={props.esconderMenu} className={estiloTopo.link} href={'#idportifolio'}><li>Projetos</li></Link>
                     <Link onClick={props.esconderMenu}className={estiloTopo.link} href={'#idcontatos'}><li>Contatos</li></Link>
                     </ul>
 
