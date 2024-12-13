@@ -11,7 +11,7 @@ import iconNode from "../../../public/node.png"
 import iconFigma from '../../../public/iconFigma.png'
 import iconWpress from '../../../public/wpress.png'
 import React, { useState, useEffect, useRef } from "react";
-import dadosHabilidades from "../dados/dadosHabili";
+import {dadosHabilidades} from "../dados/dadosHabili";
 
 
 
@@ -155,7 +155,7 @@ export default function Habilidade(props) {
 
                                 <div className={estiloHabilidade.Moldura}>
 
-                                    <Image className={estiloHabilidade.iconEscondida} src={array.img} />
+                                    <Image className={estiloHabilidade.iconEscondida} src={array} />
 
                                 </div>
 

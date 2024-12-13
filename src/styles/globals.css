@@ -41,27 +41,22 @@ main{
    
 }
 
-
-
 ::-webkit-scrollbar-track {
-    background-color:var(--padrao); /* cor de fundo da track */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-
-    background-color: var(--verde); /* cor da thumb (alça) */
-    width: 5px;
-    transition: all 500ms;
-      
+  background-color:var(--padrao); /* cor de fundo da track */
 }
+
+::-webkit-scrollbar-thumb {
+
+  background-color: var(--verde); /* cor da thumb (alça) */
+  width: 5px;
+  transition: all 500ms;
+    
+}
+
+
    
 
-  ::-webkit-scrollbar-thumb:hover{
-
-    background-color:#41d32a9f;
-    transition: all 500ms;
-  }
-
+ 
 
   :root{
 

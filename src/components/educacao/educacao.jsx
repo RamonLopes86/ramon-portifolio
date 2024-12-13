@@ -99,7 +99,7 @@ export default function Educacao(props) {
 
 
 
-                        <div className={`${estiloEdu.moldura} ${observado[index] ? estiloEdu.visible : estiloEdu.invisible} `} key={index} ref={(el) => (boxRef.current[index] = el)} >
+                        <div className={`${estiloEdu.moldura} ${observado[index] ? estiloEdu.visible : estiloEdu.invisible} `} key={index} ref={(el) => boxRef.current[index] = el} >
 
 
                             <div className={estiloEdu.boxImg}>
