@@ -54,7 +54,7 @@
                 width: 200px;
                 height: 100px;
                 position: absolute;
-                 animation-name: loop;
+                animation-name: loop;
                 animation-duration:10s;
                 animation-timing-function: linear;
                 animation-iteration-count: infinite;
@@ -88,42 +88,56 @@
 
     .boxBlocos .molduraImg:nth-child(1){
 
-        animation-delay:calc(10s / 8 * (8 - 1) )
+        animation-delay:calc(10s / 10 * (10 - 1) )
         
 
     }
     .molduraImg:nth-child(2){
 
-        animation-delay: calc(10s / 8 * (8 - 2));
+        animation-delay: calc(10s / 10 * (10 - 2));
         
     }
     .molduraImg:nth-child(3){
 
-        animation-delay: calc(10s / 8 * (8 - 3));
+        animation-delay: calc(10s / 10 * (10 - 3));
     }
     .molduraImg:nth-child(4){
 
-        animation-delay: calc(10s / 8 * (8 - 4));
+        animation-delay: calc(10s / 10 * (10 - 4));
     }
     .molduraImg:nth-child(5){
 
-        animation-delay: calc(10s / 8 * (8 - 5));
+        animation-delay: calc(10s / 10 * (10 - 5));
     }
     .molduraImg:nth-child(6){
 
-        animation-delay: calc(10s / 8 * (8 - 6));
+        animation-delay: calc(10s / 10 * (10 - 6));
     }
     .molduraImg:nth-child(7){
 
-        animation-delay: calc(10s / 8 * (8 - 7));
+        animation-delay: calc(10s / 10 * (10 - 7));
         
     }
 
     .molduraImg:nth-child(8){
 
-        animation-delay: calc(10s / 8 * (8 - 8));
+        animation-delay: calc(10s / 10 * (10 - 8));
         
     }
+
+    .molduraImg:nth-child(9){
+
+        animation-delay: calc(10s / 10 * (10 - 9));
+        
+    }
+
+    .molduraImg:nth-child(10){
+
+        animation-delay: calc(10s / 10 * (10 - 10));
+    }
+
+
+   
    
     
         
@@ -154,7 +168,7 @@
 
     to{
 
-        left: -200px;
+       left: -300px;
     }
     
 }

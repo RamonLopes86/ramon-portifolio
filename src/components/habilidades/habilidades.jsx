@@ -5,12 +5,14 @@ import mysql from "../../../public/mysql.png"
 import js from "../../../public/js.png"
 import html from "../../../public/html.png"
 import css from "../../../public/css.png"
-import front from '../../../public/front.png'
 import iconReact from "../../../public/iconRreact.png"
 import iconGit from '../../../public/gitIcon.png'
 import iconNode from "../../../public/node.png"
+import iconFigma from '../../../public/iconFigma.png'
+import iconWpress from '../../../public/wpress.png'
 import React, { useState, useEffect, useRef } from "react";
 import dadosHabilidades from "../dados/dadosHabili";
+
 
 
 
@@ -122,6 +124,15 @@ export default function Habilidade(props) {
                             
                             <Image className={estiloHabilidade.icon} src={iconGit} />
 
+                        </div>
+
+                        <div className={estiloHabilidade.molduraImg}>
+
+                            <Image  className={`${estiloHabilidade.icon} ${estiloHabilidade.iconFig}`} src={iconFigma}/>
+                        </div>
+
+                        <div className={estiloHabilidade.molduraImg}>
+                                <Image className={estiloHabilidade.icon} src={iconWpress} />
                         </div>
                     </section>
                 </section>

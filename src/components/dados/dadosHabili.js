@@ -7,6 +7,8 @@ import css from "../../../public/css.png"
 import iconReact from "../../../public/iconRreact.png"
 import iconNode from "../../../public/node.png"
 import iconGit from "../../../public/gitIcon.png"
+import iconFigma from '../../../public/iconFigma.png'
+import iconWpress from '../../../public/wpress.png'
 
 
 
@@ -15,53 +17,65 @@ const dadosHabilidades = [
 
 { 
     img: sql,
-    tx:''
+   
 
 
 },
 { 
     img: mysql,
-    tx:''
+   
 
 
 },
 { 
     img: js,
-    tx:''
+   
 
 
 },
 { 
     img: html,
-    tx:''
+   
 
 
 },
 { 
     img: css,
-    tx:''
+   
 
 
 },
 { 
     img: iconReact,
-    tx:''
+   
 
 
 },
 { 
     img: iconNode,
-    tx:''
+   
 
 
 },
 
 { 
     img: iconGit,
-    tx:''
+   
 
 
 },
+{ 
+    img: iconFigma,
+   
+
+
+},
+{ 
+    img: iconWpress,
+   
+},
+
+
 
 
 
