@@ -76,8 +76,9 @@
 
 .boxPai .boxTexto .tx h1{
 
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: 1px;
+    width: 100%;
 
 }
 
@@ -118,6 +119,25 @@
     
 }
 
+.boxPai .boxBotoes .link > button {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
+    & .iconWpp{
+
+        width: 25px;
+        height: fit-content;
+
+    }
+}
+
+
+
 .boxPai .boxTexto .tx .boxBotoes button{
 
         width: 200px;
@@ -130,7 +150,7 @@
         border-radius: 5px; */
         border-radius: 5px;
 
-    }
+}
 
 
 
@@ -188,9 +208,7 @@
     height: fit-content;
     transition: all 500ms;
     border: none;
-    background-color: var(--verde);
-    border-radius: 100%;
-    border: 1px solid white;
+    color: var(--verde)
  
 }
        

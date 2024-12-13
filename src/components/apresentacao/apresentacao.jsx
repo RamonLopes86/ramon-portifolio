@@ -2,8 +2,11 @@ import estiloApresentacao from "./apresentacao.module.css";
 import Image from "next/image";
 import ramon from "../../../public/ramon1.jpg"
 import Link from "next/link";
-import github from "../../../public/placa-do-github.png"
-import lkd from "../../../public/lkdSem.png"
+// import github from "../../../public/placa-do-github.png"
+// import lkd from "../../../public/lkdSem.png"
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaGithub , FaInstagram , FaWhatsapp } from "react-icons/fa";
+
 
 
 
@@ -28,7 +31,11 @@ export default function Apresentacao(props){
 
                         <div className={`${estiloApresentacao.boxBotoes} `}>
 
-                            <button  ref={props.btnCvRef} className={`${estiloApresentacao.btnCv}`}>Baixar CV</button>
+                            <Link className={estiloApresentacao.link} href={'https://wa.me/5571991265530?text= Ola...'} target="_Blank" >
+                            
+                                <button  ref={props.btnCvRef} className={`${estiloApresentacao.btnCv}`}>Fale Comigo <FaWhatsapp className={estiloApresentacao.iconWpp}/></button>
+
+                            </Link>
                             
                            <button onClick={props.hendleClick}  className={estiloApresentacao.btnProj}>Meus Projetos</button>
 
@@ -44,18 +51,19 @@ export default function Apresentacao(props){
 
                             <Link href={'https://github.com/RamonLopes86'} target="_blank">
                             
-                             < Image  className={`${estiloApresentacao.icon} ${estiloApresentacao.iconGit} `}  src={github}/>  
+                                <FaGithub className={estiloApresentacao.icon} />
                             
                             </Link>
 
                             <Link href={'https://www.linkedin.com/in/ramon-lopes-455862318/'} target="_blank"> 
                             
-                            <Image className={`${estiloApresentacao.icon}`} src={lkd}/>
+                            <IoLogoLinkedin className={estiloApresentacao.icon} />
                             
                             </Link>
 
                             <Link href={''}>
-                                    
+
+                                <FaInstagram className={estiloApresentacao.icon}/>
                             </Link>
 
                         </div>
