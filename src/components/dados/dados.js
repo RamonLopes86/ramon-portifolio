@@ -2,25 +2,25 @@ const dados = [
 
 {
 
-    periodo:"2024-2025",
+    
     titulo:"Análise e Desenvolvimento de Sistamas",
-    texto:"Graduação na faculdade DESCOMPLICA que forma profissionais aptos a projetar, analisar, desenvolver e implementar sistemas de informação."
+    texto:"Analisar, desenvolver e implementar sistemas de informação."
 
 },
 
 {
 
-    periodo:"2023",
-    titulo:"JavaScript , HTML , CSS , React",
-    texto:"Amplo conhecimento na linguagem de programação JavaScript e na linguagem de marcação HTML e em CSS com cursos na plataforma Alura , DevClub , Curso em vídeo"
+    
+    titulo:"JavaScript , HTML , CSS , React , React Native , SQL , MYSQL , GIT , GITHUB , API ...",
+    texto:"Amplo conhecimento com diversos cursos e aplicações em  projetos"
 
 },
 
 {
 
-    periodo:"2023",
-    titulo:"SQL , MySQL , NodeJs",
-    texto:"Conhecimento em banco de dados SQL e SGBG com mySQL integrando com frontend"
+   
+    titulo:"Figma , WordPress",
+    texto:"Amplo conhecimento no Figma para criar designs e protótipos de alta qualidade e o WordPress para soluções digitais eficientes "
 
 },
 

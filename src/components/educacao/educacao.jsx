@@ -106,7 +106,7 @@ export default function Educacao(props) {
                                 <Image className={estiloEdu.imgPc} src={computador} alt="imagem de um PC" />
                             </div>
 
-                            <span>{array.periodo}</span>
+                           
                             <h1>{array.titulo}</h1>
                             <p>{array.texto}</p>
 
