@@ -2,10 +2,9 @@ import estiloApresentacao from "./apresentacao.module.css";
 import Image from "next/image";
 import ramon from "../../../public/ramon1.jpg"
 import Link from "next/link";
-// import github from "../../../public/placa-do-github.png"
-// import lkd from "../../../public/lkdSem.png"
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub , FaInstagram , FaWhatsapp } from "react-icons/fa";
+
 
 
 

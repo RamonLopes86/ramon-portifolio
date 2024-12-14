@@ -204,8 +204,8 @@
 
 .boxPai .icon {
 
-    width: 35px;
-    height: fit-content;
+    width: 40px;
+    height: 40px;
     transition: all 500ms;
     border: none;
     color: var(--verde)
